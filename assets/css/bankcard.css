@@ -3,6 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .bankcard {
     width: 300px;
@@ -11,11 +12,12 @@ body {
     background-image: url(../images/bckground.jpg);
     background-size: cover;
     box-shadow: 0 0 10px #080808;
-}
-.carddemo {
     position: relative;
     transform-style: preserve-3d;
     transition: 0.5s;
+}
+body:hover .bankcard {
+    transform: rotateY(180deg);
 }
 .frontside, .backside {
     position: absolute;
@@ -23,17 +25,8 @@ body {
     height: 100%;
     backface-visibility: hidden;
 }
-.frontside {
-    transform: rotateY(0deg);
-}
 .backside {
     transform: rotateY(180deg);
-}
-.bankcard:hover .frontside {
-    transform: rotateY(-180deg);
-}
-.bankcard:hover .backside {
-    transform: rotateY(0deg);
 }
 .bankname {
     font-size: 25px;

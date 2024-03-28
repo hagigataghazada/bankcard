@@ -14,7 +14,7 @@ body {
     box-shadow: 0 0 10px #080808;
     position: relative;
     transform-style: preserve-3d;
-    transition: 0.5s;
+    transition: 1s;
 }
 body:hover .bankcard {
     transform: rotateY(180deg);
